@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Pacifico&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    padding: 0;
+    margin: 0;
+}
+
+hr{
+    height: 1px;
+    border: none;
+    background: #7a7a7a;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+p,
+h1{
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+h1{
+    font-weight: normal;
+}
+
+.logo{
+    font-family: 'Pacifico';
+    font-size: 70px;
+}
+
+.logo_main{
+    height: 150px;
+    padding: 20px;
+    background: #443e3e;
+    color: #f1becf;
+    cursor: default;
+}
+
+.logo_small{
+    display: inline-block;
+    font-size: 20px;
+    padding: 6px;
+    margin-right: 50px;
+    color: rgb(197, 141, 197);
+    cursor: pointer;
+}
+
+.nav{
+    float: left;
+    width: 100%;
+    background: #222;
+color: white;
+padding: 0 20px;
+transition: .3s ease all;
+backface-visibility: hidden;
+transform: translate3d(0, 0, 0);
+-webkit-transform: translate3d(0, 0, 0);
+}
+
+.nav .wrap{
+    position: relative;
+    left: '150px';
+    transition: 0.4s ease all;
+}
+
+nav{
+    display: inline-block;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav a{
+    display: block;
+    padding: 20px;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease all;
+}
+
+.fab{
+    width: 17px;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+
+<!--nav a:hover{
+    color: none;
+    background: rgb(232, 170, 238);
+}--!>
+
+.main{
+    background: white;
+    padding: 80px;
+    padding: 60px;
+}
+
+body.nav_fixed .nav{
+    position: fixed;
+    top: 0;
+}
+
+body.nav_fixed .nav .wrap{
+    left: 0;
+}
+
+
+@media screen and (max-width: 750px){
+    .logo.logo_main{
+        font-size: 40px;
+        padding: 0;
+        text-align: center
+    }
+}
+
+
+
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "buscar";
+  src:url("fonts/buscar.eot");
+  src:url("fonts/buscar.eot?#iefix") format("embedded-opentype"),
+    url("fonts/buscar.woff") format("woff"),
+    url("fonts/buscar.ttf") format("truetype"),
+    url("fonts/buscar.svg#buscar") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "buscar" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak-as: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "buscar" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak-as: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-buscar:before {
+  content: "\61";
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(Found/Fondo.png.png);
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+
+}
+
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 60%;
+    top: 7%;
+    transform: translate(-6%,6%);
+    background: rgb(161, 217, 245);
+    padding: 10px;
+    height: 80px;
+    border-radius: 40px;
+}
+.buscar_texto{
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    float: left;
+    line-height: 60px;
+    transition: .3s;
+    width: 0;
+}
+.boton{
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;  
+}
+/*=?=====responsive========*/
+@media screen and (min-width:480px){
+    .buscar:hover > .buscar_texto{
+        width: 190px;
+    }    
+}
+
+@media screen and (min-width:768px){
+    .buscar:hover > .buscar_texto{
+        width: 300px;
+    }    
+}
+
+@media screen and (min-width:1024px){
+    .buscar:hover > .buscar_texto{
+        width: 500px;
+    }    
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galeria{
+    font-family: 'open sans';
+}
+
+.galeria h1{
+    text-align: center;
+    margin: 20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid hsl(295, 75%, 68%);
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, green0, blue0, .75);
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: hsla(225, 77%, 42%, 0.596);
+    width: 100%;
+    height: 0%;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.overlay h2{
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.overlay h3{
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+
+}
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width:90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    .contenedor-imagenes{
+        width:90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+
+.footer1{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background: white;
+}
+
+
+
